@@ -1,0 +1,50 @@
+﻿> FLAG  : enable_debug                                  set to________ true
+> FLAG  : enable_logging                                set to________ true
+> FLAG  : use_global_preference_store                   set to________ true
+> JAI   : ImageIO extensions                            loaded for____ BTF|TF8|TIF|TIFF|arx|asc|bmp|btf|gif|jp2|jpeg|jpg|pbm|pgm|png|ppm|tf8|tif|tiff|wbmp
+> GAMA  : version 2025.6.4                              loading on____ Windows 11 10.0, processor amd64, JDK OpenJDK 64-Bit Server VM Eclipse Adoptium version 21.0.7+6-LTS
+powershell : Okt. 29, 2026 5:23:15 PM java.util.prefs.WindowsPreferences <init>
+In Zeile:2 Zeichen:484
++ ... age.cjs' 5; powershell -NoProfile -ExecutionPolicy Bypass -File 'assi ...
++                 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (Okt. 29, 2026 5...ferences <init>:String) [], RemoteException
+    + FullyQualifiedErrorId : NativeCommandError
+ 
+WARNUNG: Could not open/create prefs root node Software\JavaSoft\Prefs at root 0xffffffff80000001. Windows 
+RegCreateKeyEx(...) returned error code 5.
+Okt. 29, 2026 5:23:15 PM java.util.prefs.WindowsPreferences WindowsRegOpenKey1
+WARNUNG: Trying to recreate Windows registry node Software\JavaSoft\Prefs at root 0xffffffff80000001.
+Okt. 29, 2026 5:23:15 PM java.util.prefs.WindowsPreferences openKey
+WARNUNG: Could not open windows registry node Software\JavaSoft\Prefs at root 0xffffffff80000001. Windows 
+RegOpenKey(...) returned error code 2.
+Okt. 29, 2026 5:23:15 PM java.util.prefs.WindowsPreferences WindowsRegOpenKey1
+WARNUNG: Trying to recreate Windows registry node Software\JavaSoft\Prefs\gama at root 0xffffffff80000001.
+Okt. 29, 2026 5:23:15 PM java.util.prefs.WindowsPreferences openKey
+WARNUNG: Could not open windows registry node Software\JavaSoft\Prefs\gama at root 0xffffffff80000001. Windows 
+RegOpenKey(...) returned error code 2.
+> GAMA  : Plugin gama.core                              loaded in_____ 2042ms
+> GAMA  : Plugin gama.extension.bdi                     loaded in_____ 29ms
+> GAMA  : Plugin gama.extension.database                loaded in_____ 226ms
+> GAMA  : Plugin gama.extension.fipa                    loaded in_____ 6ms
+> GAMA  : Snapshot services                             inactive______ (headless mode)
+> GAMA  : Plugin gama.extension.image                   loaded in_____ 32ms
+> GAMA  : Plugin gama.extension.maths                   loaded in_____ 144ms
+> GAMA  : Plugin gama.extension.network                 loaded in_____ 3ms
+> GAMA  : Plugin gama.extension.pedestrian              loaded in_____ 8ms
+> GAMA  : Plugin gama.extension.physics                 loaded in_____ 7ms
+> GAMA  : Plugin gama.extension.serialize               loaded in_____ 3ms
+> GAMA  : Plugin gama.extension.stats                   loaded in_____ 25ms
+> GAMA  : Plugin gama.extension.traffic                 loaded in_____ 22ms
+> GAMA  : Plugin gama.headless                          loaded in_____ 1ms
+> GAML  : Initializing parser                           done in_______ 92ms
+> GAMA  : Plugin gaml.compiler                          loaded in_____ 95ms
+> GAMA  : Loading extensions to 'create'                done in_______ 3ms
+> GAMA  : Loading extensions to 'save'                  done in_______ 155ms
+> GAMA  : Loading extensions to 'draw'                  done in_______ 1ms
+> GAMA  : Loading extensions to 'event'                 done in_______ 1ms
+> GAMA  : Gathering built-in models                     done in_______ 3ms
+> GAMA  : Loading constants                             done in_______ 8094ms
+> GAML  : Plugins with language additions               loaded in_____ 10931ms
+GAMA configuring and loading...
+> GAML  : Artifacts                                     built in______ 26ms
+

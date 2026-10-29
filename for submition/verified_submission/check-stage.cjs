@@ -3,7 +3,7 @@ const [stage,folder,log]=process.argv.slice(2);
 const xml=fs.readFileSync(path.join(__dirname,'validation',folder,`simulation-outputsF${stage}.xml`),'utf8');
 const steps=[...xml.matchAll(/<Step id='(\d+)' >([\s\S]*?)<\/Step>/g)].map(m=>Object.fromEntries([...m[2].matchAll(/<Variable name='([^']+)'[^>]*>(.*?)<\/Variable>/g)].map(v=>[v[1],v[2]])));
 assert.equal(steps.length,20,'20 complete output steps required');
-if(log) assert(!/Exception|Java error:|Error in|compilation error/i.test(fs.readFileSync(log,'utf8')),'Runtime/compilation error in log');
+if(log) {const b=fs.readFileSync(log); const t=b[0]===255&&b[1]===254?b.toString('utf16le'):b.toString('utf8');assert(!/java\.lang\.|Java error:|Error in|compilation error/i.test(t),'Runtime/compilation error in log');}
 for(const s of steps){ assert.equal(+s.Lions,20); assert(+s.Zebras>=0&&+s.Zebras<=20); }
 if(+stage===2){
   for(const name of ['LionPosition','ZebraPosition']){

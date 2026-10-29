@@ -14,7 +14,7 @@ global {
 
 // ---------- AGENTS ----------
 
-species lion skills: [moving] {
+species lion skills: [moving] parallel: false {
 	float speed <- 1.0;
     float energy <- 50.0;
 
@@ -39,7 +39,7 @@ species lion skills: [moving] {
 	}
 }
 
-species zebra skills: [moving] {
+species zebra skills: [moving] parallel: false {
 	float speed <- 1.0;
 
 	// random walk
@@ -63,7 +63,7 @@ species zebra skills: [moving] {
 
 // ---------- CELLS (CA) ----------
 
-grid vegetation_cell width: 50 height: 50 {
+grid vegetation_cell width: 50 height: 50 parallel: false {
 	// random initial biomass between 0 and 10 kg
 	float biomass <- rnd(10.0);
 
@@ -82,7 +82,7 @@ grid vegetation_cell width: 50 height: 50 {
 
 // ---------- SIMULATION ----------
 
-experiment savannah_sim type: gui {
+experiment savannah_sim type: gui parallel: false {
 	output {
         monitor "Lions" value: length(lion);
         monitor "Zebras" value: length(zebra);

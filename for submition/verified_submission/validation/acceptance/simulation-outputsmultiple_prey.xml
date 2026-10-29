@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Simulation id="multiple_prey" >
+	<Step id='0' >
+		<Variable name='Lions' type='INT'>1</Variable>
+		<Variable name='Zebras' type='INT'>0</Variable>
+		<Variable name='Grass' type='FLOAT'>0.5997999999999821</Variable>
+		<Variable name='MinGrass' type='FLOAT'>0.1</Variable>
+		<Variable name='Energy' type='FLOAT'>69.95</Variable>
+		<Variable name='TotalGrass' type='FLOAT'>1499.4999999999552</Variable>
+		<Variable name='Cells' type='INT'>2500</Variable>
+	</Step>
+</Simulation>

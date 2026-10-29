@@ -1,0 +1,75 @@
+[
+  {
+    "test": "movement_cost",
+    "status": "PASS",
+    "energy": [
+      49.95,
+      49.900000000000006,
+      49.85000000000001
+    ],
+    "note": "One wander action costs 0.05, even with zero speed in controlled fixture."
+  },
+  {
+    "test": "multiple_prey",
+    "status": "PASS",
+    "Lions": 1,
+    "Zebras": 0,
+    "Grass": 0.5997999999999821,
+    "MinGrass": 0.1,
+    "Energy": 69.95,
+    "TotalGrass": 1499.4999999999552,
+    "Cells": 2500
+  },
+  {
+    "test": "starvation",
+    "status": "PASS",
+    "lions": [
+      0,
+      0
+    ]
+  },
+  {
+    "test": "grazing",
+    "status": "PASS",
+    "Lions": 0,
+    "Zebras": 2,
+    "Grass": 0.5997999999999821,
+    "MinGrass": 0.1,
+    "Energy": 0,
+    "TotalGrass": 1499.4999999999552,
+    "Cells": 2500,
+    "secondTotal": 1749.4000000000744
+  },
+  {
+    "test": "unbounded_grass",
+    "status": "PASS",
+    "first": 0.5999999999999821,
+    "last": 11.499999999999998
+  },
+  {
+    "test": "200_step_smoke",
+    "status": "PASS",
+    "first": {
+      "Lions": 20,
+      "Zebras": 19,
+      "Grass": 5.10127936771577,
+      "MinGrass": 0.1,
+      "Energy": 50.45000000000002,
+      "Outside": 0,
+      "main_display": null,
+      "population_chart": null,
+      "grass_chart": null
+    },
+    "last": {
+      "Lions": 20,
+      "Zebras": 10,
+      "Grass": 24.060614840780246,
+      "MinGrass": 0.1,
+      "Energy": 45.00000000000057,
+      "Outside": 0,
+      "main_display": null,
+      "population_chart": null,
+      "grass_chart": null
+    }
+  }
+]

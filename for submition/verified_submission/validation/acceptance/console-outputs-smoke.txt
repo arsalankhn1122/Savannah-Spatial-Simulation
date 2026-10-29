@@ -1,0 +1,11 @@
+C:\Users\arsal\Desktop\Spatial Simulation course\assignement2\for submition\verified_submission\validation\fixtures\smoke.gaml model is being compiled...
+Image Display Surface created for simulation Simulation 0
+Image Display Surface created for simulation Simulation 0
+Image Display Surface created for simulation Simulation 0
+.Asking to snapshot step 1  from Thread[#96,pool-1-thread-1,5,main] in simulation 0
+Asking to snapshot step 1  from Thread[#96,pool-1-thread-1,5,main] in simulation 0
+Asking to snapshot step 1  from Thread[#96,pool-1-thread-1,5,main] in simulation 0
+...................................................................................................Asking to snapshot step 200  from Thread[#96,pool-1-thread-1,5,main] in simulation 0
+Asking to snapshot step 200  from Thread[#96,pool-1-thread-1,5,main] in simulation 0
+Asking to snapshot step 200  from Thread[#96,pool-1-thread-1,5,main] in simulation 0
+> GAMA  : Simulation running                            for: _________ 3050ms

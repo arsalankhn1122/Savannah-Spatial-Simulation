@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Simulation id="starvation" >
+	<Step id='0' >
+		<Variable name='Lions' type='INT'>0</Variable>
+		<Variable name='Zebras' type='INT'>0</Variable>
+		<Variable name='Grass' type='FLOAT'>0.5999999999999821</Variable>
+		<Variable name='MinGrass' type='FLOAT'>0.6</Variable>
+		<Variable name='Energy' type='FLOAT'>0.0</Variable>
+		<Variable name='TotalGrass' type='FLOAT'>1499.9999999999552</Variable>
+		<Variable name='Cells' type='INT'>2500</Variable>
+	</Step>
+	<Step id='1' >
+		<Variable name='Lions' type='INT'>0</Variable>
+		<Variable name='Zebras' type='INT'>0</Variable>
+		<Variable name='Grass' type='FLOAT'>0.7000000000000298</Variable>
+		<Variable name='MinGrass' type='FLOAT'>0.7</Variable>
+		<Variable name='Energy' type='FLOAT'>0.0</Variable>
+		<Variable name='TotalGrass' type='FLOAT'>1750.0000000000746</Variable>
+		<Variable name='Cells' type='INT'>2500</Variable>
+	</Step>
+</Simulation>

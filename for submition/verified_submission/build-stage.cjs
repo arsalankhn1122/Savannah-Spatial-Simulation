@@ -2,7 +2,7 @@ const fs = require('fs');
 const path = require('path');
 const stage = Number(process.argv[2]);
 const root = __dirname;
-const original = fs.readFileSync(path.resolve(root, '../../..', 'assignement1/savannah (1).gaml'), 'utf8');
+const original = fs.readFileSync(path.join(root, 'reference/savannah_unit1.gaml'), 'utf8');
 let code = original.slice(original.indexOf('model Savannah'));
 code = code.replace('model Savannah', 'model SavannahAI');
 code = code.replace('global {', 'global {\n    geometry shape <- square(100 #m);');
@@ -31,10 +31,13 @@ if (stage >= 7) {
   code = code.replace('\n\taspect base {', '\n    // Hunting precedes starvation, so food can rescue a lion this step.\n    reflex starve when: energy <= 0 { do die; }\n\n\taspect base {');
 }
 const file = stage >= 6 ? 'savannah_extended.gaml' : 'savannah_baseline.gaml';
+code = code.replaceAll('skills: [moving] {', 'skills: [moving] parallel: false {');
+code = code.replace('width: 50 height: 50 {', 'width: 50 height: 50 parallel: false {');
+code = code.replace('experiment savannah_sim type: gui {', 'experiment savannah_sim type: gui parallel: false {');
 code = code.replace('    geometry shape', '    // Explicit 100 m world, as required by SPEC.md.\n    geometry shape');
 // Monitors expose real GAMA state to the headless acceptance run.
 code = code.replace('experiment savannah_sim type: gui {', `experiment savannah_sim type: gui {`);
-code = code.replace('\n\toutput {', '\n\toutput {\n        monitor "Lions" value: length(lion);\n        monitor "Zebras" value: length(zebra);' + (stage === 2 ? '\n        monitor "LionPosition" value: lion[0].location;\n        monitor "ZebraPosition" value: zebra[0].location;' : '') + (stage >= 4 ? '\n        monitor "Grass" value: mean(vegetation_cell collect each.biomass);\n        monitor "MinGrass" value: min(vegetation_cell collect each.biomass);' : '') + (stage >= 7 ? '\n        monitor "Energy" value: mean(lion collect each.energy);' : ''));
+code = code.replace('\n\toutput {', '\n\toutput {\n        monitor "Lions" value: length(lion);\n        monitor "Zebras" value: length(zebra);' + (stage === 2 ? '\n        monitor "LionPosition" value: lion[0].location;\n        monitor "ZebraPosition" value: zebra[0].location;' : '') + (stage >= 4 ? '\n        monitor "Grass" value: mean(vegetation_cell collect each.biomass);\n        monitor "MinGrass" value: min(vegetation_cell collect each.biomass);' : '') + (stage >= 7 ? '\n        monitor "Energy" value: empty(lion) ? 0.0 : mean(lion collect each.energy);' : ''));
 fs.writeFileSync(path.join(root, file), code, 'utf8');
 const out = ['Lions','Zebras', ...(stage===2?['LionPosition','ZebraPosition']:[]), ...(stage >= 4 ? ['Grass','MinGrass'] : []), ...(stage>=7?['Energy']:[])];
 fs.mkdirSync(path.join(root,'validation'), {recursive:true});
