@@ -42,7 +42,7 @@ Lions and zebras are initially at random positions.
 Energy, eating, reproduction, a grass limit (these come in step 4, Extend).
 
 ## Continuation and explicit extension decisions (2026-10-29)
-This is a new, auditable continuation of existing work, not a reconstruction of the earlier AI conversation. The original specification already existed when this session began. Unit 1 source: ../../../assignement1/savannah (1).gaml (relative to this folder, use four parent levels).
+This is a new, auditable continuation of existing work, not a reconstruction of the earlier AI conversation. The original specification already existed when this session began. Unit 1 source: ../../../assignement1/savannah (1).gaml, relative to this folder.
 
 The baseline retains killing ALL zebras within 2 m and unbounded grass growth. The existing extension silently changed both rules; these changes will be corrected. Extensions will be isolated in a separate model:
 - A zebra removes min(1 kg, available biomass) from its containing cell after moving; biomass cannot become negative.

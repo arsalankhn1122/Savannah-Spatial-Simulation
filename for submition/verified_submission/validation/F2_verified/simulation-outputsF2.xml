@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Simulation id="F2" >
+	<Step id='0' >
+		<Variable name='Lions' type='INT'>20</Variable>
+		<Variable name='Zebras' type='INT'>20</Variable>
+		<Variable name='LionPosition' type='UNDEFINED'>{92.24313951064018,82.12687178317178,0.0}</Variable>
+		<Variable name='ZebraPosition' type='UNDEFINED'>{46.980994329110956,13.743774686305942,0.0}</Variable>
+	</Step>
+	<Step id='1' >
+		<Variable name='Lions' type='INT'>20</Variable>
+		<Variable name='Zebras' type='INT'>20</Variable>
+		<Variable name='LionPosition' type='UNDEFINED'>{93.01101286742364,82.76747345967762,0.0}</Variable>
+		<Variable name='ZebraPosition' type='UNDEFINED'>{46.693414163628766,14.701531256850481,0.0}</Variable>
+	</Step>
+	<Step id='2' >
+		<Variable name='Lions' type='INT'>20</Variable>
+		<Variable name='Zebras' type='INT'>20</Variable>
+		<Variable name='LionPosition' type='UNDEFINED'>{92.39189748306269,81.98217342730298,0.0}</Variable>
+		<Variable name='ZebraPosition' type='UNDEFINED'>{47.3616238997679,13.957558308062106,0.0}</Variable>
+	</Step>
+	<Step id='3' >
+		<Variable name='Lions' type='INT'>20</Variable>
+		<Variable name='Zebras' type='INT'>20</Variable>
+		<Variable name='LionPosition' type='UNDEFINED'>{92.29163308499518,82.97713425591894,0.0}</Variable>
+		<Variable name='ZebraPosition' type='UNDEFINED'>{47.40863373654557,14.956452734538766,0.0}</Variable>
+	</Step>
+	<Step id='4' >
+		<Variable name='Lions' type='INT'>20</Variable>
+		<Variable name='Zebras' type='INT'>20</Variable>
+		<Variable name='LionPosition' type='UNDEFINED'>{91.86215109483945,82.07405883263921,0.0}</Variable>
+		<Variable name='ZebraPosition' type='UNDEFINED'>{46.44300057637286,14.696543904417771,0.0}</Variable>
+	</Step>
+	<Step id='5' >
+		<Variable name='Lions' type='INT'>20</Variable>
+		<Variable name='Zebras' type='INT'>20</Variable>
+		<Variable name='LionPosition' type='UNDEFINED'>{92.02272076564186,81.08703432391695,0.0}</Variable>
+		<Variable name='ZebraPosition' type='UNDEFINED'>{47.25096701634325,14.10731539875841,0.0}</Variable>
+	</Step>
+	<Step id='6' >
+		<Variable name='Lions' type='INT'>20</Variable>
+		<Variable name='Zebras' type='INT'>20</Variable>
+		<Variable name='LionPosition' type='UNDEFINED'>{92.6510649017747,81.86496982676245,0.0}</Variable>
+		<Variable name='ZebraPosition' type='UNDEFINED'>{47.70554113190058,13.216606482520746,0.0}</Variable>
+	</Step>
+	<Step id='7' >
+		<Variable name='Lions' type='INT'>20</Variable>
+		<Variable name='Zebras' type='INT'>20</Variable>
+		<Variable name='LionPosition' type='UNDEFINED'>{92.6527255020698,82.86496844796483,0.0}</Variable>
+		<Variable name='ZebraPosition' type='UNDEFINED'>{48.64104020713306,13.569935621199095,0.0}</Variable>
+	</Step>
+	<Step id='8' >
+		<Variable name='Lions' type='INT'>20</Variable>
+		<Variable name='Zebras' type='INT'>20</Variable>
+		<Variable name='LionPosition' type='UNDEFINED'>{93.4989077197739,82.33207478648876,0.0}</Variable>
+		<Variable name='ZebraPosition' type='UNDEFINED'>{48.84013081684491,12.589954535093572,0.0}</Variable>
+	</Step>
+	<Step id='9' >
+		<Variable name='Lions' type='INT'>20</Variable>
+		<Variable name='Zebras' type='INT'>20</Variable>
+		<Variable name='LionPosition' type='UNDEFINED'>{94.02510347745698,81.48171132031895,0.0}</Variable>
+		<Variable name='ZebraPosition' type='UNDEFINED'>{48.465085823943994,11.662947926001731,0.0}</Variable>
+	</Step>
+	<Step id='10' >
+		<Variable name='Lions' type='INT'>20</Variable>
+		<Variable name='Zebras' type='INT'>20</Variable>
+		<Variable name='LionPosition' type='UNDEFINED'>{93.79597388169677,80.50831539452783,0.0}</Variable>
+		<Variable name='ZebraPosition' type='UNDEFINED'>{47.46541480080413,11.68859642487596,0.0}</Variable>
+	</Step>
+	<Step id='11' >
+		<Variable name='Lions' type='INT'>20</Variable>
+		<Variable name='Zebras' type='INT'>20</Variable>
+		<Variable name='LionPosition' type='UNDEFINED'>{94.19584111027866,79.59174232078726,0.0}</Variable>
+		<Variable name='ZebraPosition' type='UNDEFINED'>{47.15392805427084,10.738345928041518,0.0}</Variable>
+	</Step>
+	<Step id='12' >
+		<Variable name='Lions' type='INT'>20</Variable>
+		<Variable name='Zebras' type='INT'>20</Variable>
+		<Variable name='LionPosition' type='UNDEFINED'>{94.13046506264232,78.59388162289629,0.0}</Variable>
+		<Variable name='ZebraPosition' type='UNDEFINED'>{46.860452041267635,11.694312365627976,0.0}</Variable>
+	</Step>
+	<Step id='13' >
+		<Variable name='Lions' type='INT'>20</Variable>
+		<Variable name='Zebras' type='INT'>20</Variable>
+		<Variable name='LionPosition' type='UNDEFINED'>{93.80181184168276,77.6494309569783,0.0}</Variable>
+		<Variable name='ZebraPosition' type='UNDEFINED'>{45.9467271149478,11.287979055374187,0.0}</Variable>
+	</Step>
+	<Step id='14' >
+		<Variable name='Lions' type='INT'>20</Variable>
+		<Variable name='Zebras' type='INT'>20</Variable>
+		<Variable name='LionPosition' type='UNDEFINED'>{92.8310145211187,77.40952980569794,0.0}</Variable>
+		<Variable name='ZebraPosition' type='UNDEFINED'>{45.361894572048236,12.09913310779927,0.0}</Variable>
+	</Step>
+	<Step id='15' >
+		<Variable name='Lions' type='INT'>20</Variable>
+		<Variable name='Zebras' type='INT'>20</Variable>
+		<Variable name='LionPosition' type='UNDEFINED'>{93.8277677529634,77.32901275901112,0.0}</Variable>
+		<Variable name='ZebraPosition' type='UNDEFINED'>{46.31809802373518,11.806430256801935,0.0}</Variable>
+	</Step>
+	<Step id='16' >
+		<Variable name='Lions' type='INT'>20</Variable>
+		<Variable name='Zebras' type='INT'>20</Variable>
+		<Variable name='LionPosition' type='UNDEFINED'>{93.11659173805789,76.6259987649661,0.0}</Variable>
+		<Variable name='ZebraPosition' type='UNDEFINED'>{45.972745708449146,12.744903366873062,0.0}</Variable>
+	</Step>
+	<Step id='17' >
+		<Variable name='Lions' type='INT'>20</Variable>
+		<Variable name='Zebras' type='INT'>20</Variable>
+		<Variable name='LionPosition' type='UNDEFINED'>{92.34146617323972,75.99419154851054,0.0}</Variable>
+		<Variable name='ZebraPosition' type='UNDEFINED'>{46.23864613796301,11.780902868126125,0.0}</Variable>
+	</Step>
+	<Step id='18' >
+		<Variable name='Lions' type='INT'>20</Variable>
+		<Variable name='Zebras' type='INT'>20</Variable>
+		<Variable name='LionPosition' type='UNDEFINED'>{91.83381344724782,75.13262976326645,0.0}</Variable>
+		<Variable name='ZebraPosition' type='UNDEFINED'>{46.74743427108769,12.64179463576681,0.0}</Variable>
+	</Step>
+	<Step id='19' >
+		<Variable name='Lions' type='INT'>20</Variable>
+		<Variable name='Zebras' type='INT'>20</Variable>
+		<Variable name='LionPosition' type='UNDEFINED'>{92.26161425760665,74.22875672646519,0.0}</Variable>
+		<Variable name='ZebraPosition' type='UNDEFINED'>{46.21534345244588,11.795107349505177,0.0}</Variable>
+	</Step>
+</Simulation>
