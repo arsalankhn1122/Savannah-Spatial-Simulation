@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Simulation id="F6" >
+	<Step id='0' >
+		<Variable name='Lions' type='INT'>20</Variable>
+		<Variable name='Zebras' type='INT'>19</Variable>
+		<Variable name='Grass' type='FLOAT'>5.10127936771577</Variable>
+		<Variable name='MinGrass' type='FLOAT'>0.1</Variable>
+	</Step>
+	<Step id='1' >
+		<Variable name='Lions' type='INT'>20</Variable>
+		<Variable name='Zebras' type='INT'>18</Variable>
+		<Variable name='Grass' type='FLOAT'>5.19367936771578</Variable>
+		<Variable name='MinGrass' type='FLOAT'>0.2</Variable>
+	</Step>
+	<Step id='2' >
+		<Variable name='Lions' type='INT'>20</Variable>
+		<Variable name='Zebras' type='INT'>18</Variable>
+		<Variable name='Grass' type='FLOAT'>5.286925481229842</Variable>
+		<Variable name='MinGrass' type='FLOAT'>0.1</Variable>
+	</Step>
+	<Step id='3' >
+		<Variable name='Lions' type='INT'>20</Variable>
+		<Variable name='Zebras' type='INT'>18</Variable>
+		<Variable name='Grass' type='FLOAT'>5.380408264500303</Variable>
+		<Variable name='MinGrass' type='FLOAT'>0.1</Variable>
+	</Step>
+	<Step id='4' >
+		<Variable name='Lions' type='INT'>20</Variable>
+		<Variable name='Zebras' type='INT'>17</Variable>
+		<Variable name='Grass' type='FLOAT'>5.474140110007061</Variable>
+		<Variable name='MinGrass' type='FLOAT'>0.1</Variable>
+	</Step>
+	<Step id='5' >
+		<Variable name='Lions' type='INT'>20</Variable>
+		<Variable name='Zebras' type='INT'>17</Variable>
+		<Variable name='Grass' type='FLOAT'>5.568420110007067</Variable>
+		<Variable name='MinGrass' type='FLOAT'>0.1</Variable>
+	</Step>
+	<Step id='6' >
+		<Variable name='Lions' type='INT'>20</Variable>
+		<Variable name='Zebras' type='INT'>17</Variable>
+		<Variable name='Grass' type='FLOAT'>5.662502234627704</Variable>
+		<Variable name='MinGrass' type='FLOAT'>0.1</Variable>
+	</Step>
+	<Step id='7' >
+		<Variable name='Lions' type='INT'>20</Variable>
+		<Variable name='Zebras' type='INT'>17</Variable>
+		<Variable name='Grass' type='FLOAT'>5.75649505530542</Variable>
+		<Variable name='MinGrass' type='FLOAT'>0.1</Variable>
+	</Step>
+	<Step id='8' >
+		<Variable name='Lions' type='INT'>20</Variable>
+		<Variable name='Zebras' type='INT'>17</Variable>
+		<Variable name='Grass' type='FLOAT'>5.850055055305417</Variable>
+		<Variable name='MinGrass' type='FLOAT'>0.1</Variable>
+	</Step>
+	<Step id='9' >
+		<Variable name='Lions' type='INT'>20</Variable>
+		<Variable name='Zebras' type='INT'>17</Variable>
+		<Variable name='Grass' type='FLOAT'>5.944077541173437</Variable>
+		<Variable name='MinGrass' type='FLOAT'>0.1</Variable>
+	</Step>
+	<Step id='10' >
+		<Variable name='Lions' type='INT'>20</Variable>
+		<Variable name='Zebras' type='INT'>17</Variable>
+		<Variable name='Grass' type='FLOAT'>6.038035751243813</Variable>
+		<Variable name='MinGrass' type='FLOAT'>0.1</Variable>
+	</Step>
+	<Step id='11' >
+		<Variable name='Lions' type='INT'>20</Variable>
+		<Variable name='Zebras' type='INT'>17</Variable>
+		<Variable name='Grass' type='FLOAT'>6.131909353339895</Variable>
+		<Variable name='MinGrass' type='FLOAT'>0.1</Variable>
+	</Step>
+	<Step id='12' >
+		<Variable name='Lions' type='INT'>20</Variable>
+		<Variable name='Zebras' type='INT'>17</Variable>
+		<Variable name='Grass' type='FLOAT'>6.22546935333989</Variable>
+		<Variable name='MinGrass' type='FLOAT'>0.1</Variable>
+	</Step>
+	<Step id='13' >
+		<Variable name='Lions' type='INT'>20</Variable>
+		<Variable name='Zebras' type='INT'>17</Variable>
+		<Variable name='Grass' type='FLOAT'>6.319189353339892</Variable>
+		<Variable name='MinGrass' type='FLOAT'>0.1</Variable>
+	</Step>
+	<Step id='14' >
+		<Variable name='Lions' type='INT'>20</Variable>
+		<Variable name='Zebras' type='INT'>17</Variable>
+		<Variable name='Grass' type='FLOAT'>6.412397607993173</Variable>
+		<Variable name='MinGrass' type='FLOAT'>0.1</Variable>
+	</Step>
+	<Step id='15' >
+		<Variable name='Lions' type='INT'>20</Variable>
+		<Variable name='Zebras' type='INT'>17</Variable>
+		<Variable name='Grass' type='FLOAT'>6.506150379690313</Variable>
+		<Variable name='MinGrass' type='FLOAT'>0.1</Variable>
+	</Step>
+	<Step id='16' >
+		<Variable name='Lions' type='INT'>20</Variable>
+		<Variable name='Zebras' type='INT'>17</Variable>
+		<Variable name='Grass' type='FLOAT'>6.600390379690321</Variable>
+		<Variable name='MinGrass' type='FLOAT'>0.1</Variable>
+	</Step>
+	<Step id='17' >
+		<Variable name='Lions' type='INT'>20</Variable>
+		<Variable name='Zebras' type='INT'>17</Variable>
+		<Variable name='Grass' type='FLOAT'>6.694293879162966</Variable>
+		<Variable name='MinGrass' type='FLOAT'>0.1</Variable>
+	</Step>
+	<Step id='18' >
+		<Variable name='Lions' type='INT'>20</Variable>
+		<Variable name='Zebras' type='INT'>17</Variable>
+		<Variable name='Grass' type='FLOAT'>6.788311423681406</Variable>
+		<Variable name='MinGrass' type='FLOAT'>0.1</Variable>
+	</Step>
+	<Step id='19' >
+		<Variable name='Lions' type='INT'>20</Variable>
+		<Variable name='Zebras' type='INT'>17</Variable>
+		<Variable name='Grass' type='FLOAT'>6.882499322954367</Variable>
+		<Variable name='MinGrass' type='FLOAT'>0.1</Variable>
+	</Step>
+</Simulation>
