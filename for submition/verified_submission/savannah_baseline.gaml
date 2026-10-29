@@ -22,6 +22,13 @@ species lion skills: [moving] {
 		do wander;
 	}
 
+	// when a lion runs into a zebra, the zebra dies
+	reflex kill {
+		ask zebra at_distance 2.0 {
+			do die;
+		}
+	}
+
 	aspect base {
 		draw circle(3) color: #orange;
 	}
@@ -48,8 +55,6 @@ experiment savannah_sim type: gui {
 	output {
         monitor "Lions" value: length(lion);
         monitor "Zebras" value: length(zebra);
-        monitor "LionPosition" value: lion[0].location;
-        monitor "ZebraPosition" value: zebra[0].location;
 		display main_display {
 			species zebra aspect: base;
 			species lion aspect: base;

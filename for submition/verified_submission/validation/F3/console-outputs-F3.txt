@@ -1,0 +1,3 @@
+C:\Users\arsal\Desktop\Spatial Simulation course\assignement2\for submition\verified_submission\validation\..\savannah_baseline.gaml model is being compiled...
+Image Display Surface created for simulation Simulation 0
+....................> GAMA  : Simulation running                            for: _________ 41ms

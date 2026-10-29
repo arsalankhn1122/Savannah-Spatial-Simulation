@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Simulation id="F3" >
+	<Step id='0' >
+		<Variable name='Lions' type='INT'>20</Variable>
+		<Variable name='Zebras' type='INT'>19</Variable>
+	</Step>
+	<Step id='1' >
+		<Variable name='Lions' type='INT'>20</Variable>
+		<Variable name='Zebras' type='INT'>19</Variable>
+	</Step>
+	<Step id='2' >
+		<Variable name='Lions' type='INT'>20</Variable>
+		<Variable name='Zebras' type='INT'>19</Variable>
+	</Step>
+	<Step id='3' >
+		<Variable name='Lions' type='INT'>20</Variable>
+		<Variable name='Zebras' type='INT'>19</Variable>
+	</Step>
+	<Step id='4' >
+		<Variable name='Lions' type='INT'>20</Variable>
+		<Variable name='Zebras' type='INT'>19</Variable>
+	</Step>
+	<Step id='5' >
+		<Variable name='Lions' type='INT'>20</Variable>
+		<Variable name='Zebras' type='INT'>19</Variable>
+	</Step>
+	<Step id='6' >
+		<Variable name='Lions' type='INT'>20</Variable>
+		<Variable name='Zebras' type='INT'>19</Variable>
+	</Step>
+	<Step id='7' >
+		<Variable name='Lions' type='INT'>20</Variable>
+		<Variable name='Zebras' type='INT'>19</Variable>
+	</Step>
+	<Step id='8' >
+		<Variable name='Lions' type='INT'>20</Variable>
+		<Variable name='Zebras' type='INT'>19</Variable>
+	</Step>
+	<Step id='9' >
+		<Variable name='Lions' type='INT'>20</Variable>
+		<Variable name='Zebras' type='INT'>19</Variable>
+	</Step>
+	<Step id='10' >
+		<Variable name='Lions' type='INT'>20</Variable>
+		<Variable name='Zebras' type='INT'>19</Variable>
+	</Step>
+	<Step id='11' >
+		<Variable name='Lions' type='INT'>20</Variable>
+		<Variable name='Zebras' type='INT'>18</Variable>
+	</Step>
+	<Step id='12' >
+		<Variable name='Lions' type='INT'>20</Variable>
+		<Variable name='Zebras' type='INT'>18</Variable>
+	</Step>
+	<Step id='13' >
+		<Variable name='Lions' type='INT'>20</Variable>
+		<Variable name='Zebras' type='INT'>18</Variable>
+	</Step>
+	<Step id='14' >
+		<Variable name='Lions' type='INT'>20</Variable>
+		<Variable name='Zebras' type='INT'>18</Variable>
+	</Step>
+	<Step id='15' >
+		<Variable name='Lions' type='INT'>20</Variable>
+		<Variable name='Zebras' type='INT'>18</Variable>
+	</Step>
+	<Step id='16' >
+		<Variable name='Lions' type='INT'>20</Variable>
+		<Variable name='Zebras' type='INT'>18</Variable>
+	</Step>
+	<Step id='17' >
+		<Variable name='Lions' type='INT'>20</Variable>
+		<Variable name='Zebras' type='INT'>18</Variable>
+	</Step>
+	<Step id='18' >
+		<Variable name='Lions' type='INT'>20</Variable>
+		<Variable name='Zebras' type='INT'>18</Variable>
+	</Step>
+	<Step id='19' >
+		<Variable name='Lions' type='INT'>20</Variable>
+		<Variable name='Zebras' type='INT'>17</Variable>
+	</Step>
+</Simulation>
