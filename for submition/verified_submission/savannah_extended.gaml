@@ -16,18 +16,23 @@ global {
 
 species lion skills: [moving] {
 	float speed <- 1.0;
+    float energy <- 50.0;
 
 	// random walk
 	reflex move {
 		do wander;
+        energy <- energy - 0.05;
 	}
 
 	// when a lion runs into a zebra, the zebra dies
 	reflex kill {
-		ask zebra at_distance 2.0 {
-			do die;
-		}
+		list<zebra> prey <- zebra at_distance 2.0;
+        energy <- energy + 10.0 * length(prey);
+        ask prey { do die; }
 	}
+
+    // Hunting precedes starvation, so food can rescue a lion this step.
+    reflex starve when: energy <= 0 { do die; }
 
 	aspect base {
 		draw circle(3) color: #orange;
@@ -83,6 +88,7 @@ experiment savannah_sim type: gui {
         monitor "Zebras" value: length(zebra);
         monitor "Grass" value: mean(vegetation_cell collect each.biomass);
         monitor "MinGrass" value: min(vegetation_cell collect each.biomass);
+        monitor "Energy" value: empty(lion) ? 0.0 : mean(lion collect each.energy);
 		display main_display axes: false {
 			grid vegetation_cell;
 			species zebra aspect: base;
