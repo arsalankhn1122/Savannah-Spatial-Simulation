@@ -74,10 +74,28 @@ experiment savannah_sim type: gui {
         monitor "Zebras" value: length(zebra);
         monitor "Grass" value: mean(vegetation_cell collect each.biomass);
         monitor "MinGrass" value: min(vegetation_cell collect each.biomass);
-		display main_display {
+		display main_display axes: false {
 			grid vegetation_cell;
 			species zebra aspect: base;
 			species lion aspect: base;
+
+			graphics "Stats" {
+				draw "Lions: " + length(lion) at: {5, 5} color: #black font: font("Arial", 16, #bold);
+				draw "Zebras: " + length(zebra) at: {5, 12} color: #black font: font("Arial", 16, #bold);
+			}
 		}
+
+		display population_chart {
+			chart "Population" type: series {
+				data "Lions" value: length(lion) color: #orange;
+				data "Zebras" value: length(zebra) color: #gray;
+			}
+		}
+        display grass_chart {
+            chart "Mean grass biomass (kg per cell)" type: series {
+                data "Biomass" value: mean(vegetation_cell collect each.biomass) color: #green;
+            }
+        }
+
 	}
 }
