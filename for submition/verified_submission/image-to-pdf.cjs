@@ -1,0 +1,16 @@
+const fs=require('fs');
+const [base,out]=process.argv.slice(2);
+const jpg=fs.readFileSync(base+'.jpg');
+const objects=[];
+objects.push(Buffer.from('<< /Type /Catalog /Pages 2 0 R >>'));
+objects.push(Buffer.from('<< /Type /Pages /Kids [3 0 R] /Count 1 >>'));
+objects.push(Buffer.from('<< /Type /Page /Parent 2 0 R /MediaBox [0 0 595.276 841.89] /Resources << /XObject << /Im0 4 0 R >> >> /Contents 5 0 R >>'));
+objects.push(Buffer.concat([Buffer.from(`<< /Type /XObject /Subtype /Image /Width 1654 /Height 2339 /ColorSpace /DeviceRGB /BitsPerComponent 8 /Filter /DCTDecode /Length ${jpg.length} >>\nstream\n`),jpg,Buffer.from('\nendstream')]));
+const stream='q 595.276 0 0 841.89 0 0 cm /Im0 Do Q';
+objects.push(Buffer.from(`<< /Length ${stream.length} >>\nstream\n${stream}\nendstream`));
+objects.push(Buffer.from('<< /Title (African Savannah with AI - IMRaD Report) /Creator (Codex; Windows System.Drawing layout) >>'));
+const parts=[Buffer.from('%PDF-1.4\n')], offsets=[0];let position=parts[0].length;
+objects.forEach((o,i)=>{offsets.push(position);const b=Buffer.concat([Buffer.from(`${i+1} 0 obj\n`),o,Buffer.from('\nendobj\n')]);parts.push(b);position+=b.length;});
+parts.push(Buffer.from(`xref\n0 ${objects.length+1}\n0000000000 65535 f \n${offsets.slice(1).map(x=>String(x).padStart(10,'0')+' 00000 n \n').join('')}trailer\n<< /Size ${objects.length+1} /Root 1 0 R /Info 6 0 R >>\nstartxref\n${position}\n%%EOF\n`));
+fs.writeFileSync(out,Buffer.concat(parts));
+console.log('One-page PDF created from the inspected page image.');

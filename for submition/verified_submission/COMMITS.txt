@@ -1,0 +1,10 @@
+﻿362d738 Fix headless parallel scheduling and verify grazing energy starvation and bounds
+4e7e456 E2: add lion movement cost feeding energy and starvation
+128a3d9 E1: let zebras graze available biomass in their containing cell
+fa6f728 F5: add population counters and grass and population charts
+10f4860 F4: add grass grid with verified unbounded linear growth
+f926313 F3: preserve Unit 1 predation of all zebras within two metres
+2fd8236 F2: verify random walking lions and zebras in explicit world
+00124c8 Document Savannah continuation specification and extension semantics
+cb3039c F1: Lions and zebras
+6fb5661 Specification

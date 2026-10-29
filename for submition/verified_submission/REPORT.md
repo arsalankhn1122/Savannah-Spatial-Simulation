@@ -1,0 +1,19 @@
+# African Savannah with AI
+
+## Introduction
+
+This assignment examines whether an AI-assisted GAMA model preserves the rules of a handwritten African Savannah simulation, then extends its feeding processes. The question is how random encounters with lions affect zebra abundance. The comparison separates agreement with specified rules from ecological realism.
+
+## Methods - including specification
+
+Specification: a continuous 100 x 100 m world starts with 20 randomly positioned lions and 20 zebras. Both wander at speed 1 per step. Lions kill all zebras within 2 m. A 50 x 50 grid starts with uniformly random 0-10 kg grass per cell and grows by 0.1 kg per cell per step without a cap. Orange circles represent lions; grey triangles represent zebras; darker green indicates more grass. Outputs comprise the map, population counters, population series and mean grass biomass.
+
+Extension: each zebra removes up to 1 kg from its containing cell after wandering, never below zero. Lions start with 50 energy units, spend 0.05 per wander action, gain 10 per zebra killed, and die at nonpositive energy after hunting. There is no reproduction or zebra starvation. Each feature was run in GAMA 2025.6.4 and committed separately. The handwritten source was compared line by line. Seed-42 runs and controlled initialization tests checked the rules. An existing specification preceded this continuation; the timing of the first-ever AI prompt cannot be verified.
+
+## Results
+
+The baseline mean grass increased from 5.109 to 7.009 kg over output steps 0-19, exactly 0.1 per step; zebras fell from the initial 20 to 17. With grazing, mean grass reached 6.882 kg at step 19. Controlled tests confirmed a 0.05 movement cost, 69.95 energy after two kills from 50 initial units, starvation, and nonnegative grazing. Grass exceeded 10 kg when left ungrazed. In the 200-step extended run, 20 lions and 10 zebras remained, mean grass reached 24.061 kg, mean lion energy was 45, and no agent left the world. Map and chart snapshots were inspected.
+
+## Discussion
+
+The existing AI extension silently capped grass at 10 kg and killed only one nearby zebra; both changes were corrected. The final baseline also makes world size explicit and adds the grass chart missing from Unit 1. Parallel execution was disabled after an intermittent headless error; the final tests passed without runtime exceptions. The grid has local growth but no neighbour interactions. Colour saturates at 10 kg while biomass remains unbounded. These results verify implementation, not real savannah dynamics: parameters are uncalibrated and one random seed cannot establish general population outcomes. The separate AI log records this session and its limits.
